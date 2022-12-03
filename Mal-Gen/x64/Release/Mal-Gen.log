@@ -1,9 +1,9 @@
 ﻿  Mal-Gen.cpp
-C:\Users\rohan\Desktop\projects\Mal-Gen\Mal-Gen\Mal-Gen\Mal-Gen.cpp(58,17): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'DWORD', possible loss of data
-C:\Users\rohan\Desktop\projects\Mal-Gen\Mal-Gen\Mal-Gen\Mal-Gen.cpp(67,183): warning C4244: '=': conversion from 'LONGLONG' to 'DWORD', possible loss of data
+C:\Users\rohan\Desktop\projects\Mal-Gen\Mal-Gen\Mal-Gen\Mal-Gen.cpp(7,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\rohan\Desktop\projects\Mal-Gen\Mal-Gen\Mal-Gen\Mal-Gen.cpp(57,14): warning C4244: 'initializing': conversion from 'DWORDLONG' to 'DWORD', possible loss of data
+C:\Users\rohan\Desktop\projects\Mal-Gen\Mal-Gen\Mal-Gen\Mal-Gen.cpp(66,159): warning C4244: '=': conversion from 'LONGLONG' to 'DWORD', possible loss of data
   Generating code
-  1 of 10 functions (10.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB was built with incompatible compiler, fall back to full compilation.
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   Mal-Gen.vcxproj -> C:\Users\rohan\Desktop\projects\Mal-Gen\Mal-Gen\x64\Release\Mal-Gen.exe
